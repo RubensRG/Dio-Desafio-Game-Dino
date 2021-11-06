@@ -1,0 +1,74 @@
+body {
+  background:#fafafa;
+}
+
+.dino {
+  position: absolute;
+  margin-left: 50px;
+  bottom: 0;
+  background-image: url("img/dino.png");
+  width: 60px;
+  height: 60px;
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url("img/cactus.png");
+}
+
+.cactus1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url("img/cactus1.png");
+}
+
+.pterod {
+  position: absolute;
+  display: inline;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  background-image: url("img/pterodactilo1.png");
+}
+
+.pterod2 {
+  position: absolute;
+  display: inline;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  background-image: url("img/pterodactilo2.png");
+}
+
+.game-over {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+/* animação da imagem de fundo */
+.background {
+  position: absolute;
+  bottom: 0;
+  background-image: url("img/background.png");
+  background-repeat: repeat-x;
+  animation: slideright 900s infinite linear;
+  -webkit-animation: slideright 900s infinite linear;
+  width: 100%;
+  height: 200px;
+}
